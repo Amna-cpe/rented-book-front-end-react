@@ -1,0 +1,140 @@
+.main-side {
+  width: 20%;
+  position: relative;
+  height: 80px;
+
+}
+.side {
+  width: 100%;
+  background-color: #1c2934;
+  height: 100vh;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around;  */
+  position: relative;
+}
+.top-side-responsive {
+  display: none;
+}
+.top-nav-list {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  bottom: -80px;
+  display: none;
+}
+.show {
+  display: block !important;
+}
+
+.side-controllers {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.logo-holder {
+  margin-top: 30px;
+  display: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo-holder h3 {
+  color: rgb(255, 255, 255);
+}
+.logo-holder h1{
+  display: none;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.side-text {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.side-text:hover {
+  background-color: #1ea80b;
+  cursor: pointer;
+}
+
+#active {
+  background-color: #1ea80b;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+p:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 30px;
+  color: #1ea80b;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  /* i want the side to change place to the top */
+  .side{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    z-index: 1000;
+    
+  }
+  .footer{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .logo-holder{
+    width: 100vw;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+    padding: 5px;
+  }
+  .logo-holder h3{    
+    float: left;
+    margin-left: 10px;
+  }
+  .logo-holder h1{
+    font-size: 25px;
+    display: block;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    float: right;
+   
+    margin-right: 10px;
+  }
+  .side-controllers{
+    position: absolute;
+    display: none;
+  }
+  .side-text{
+    background-color: #1c2934;
+    border: azure 1 solid;
+  }
+}

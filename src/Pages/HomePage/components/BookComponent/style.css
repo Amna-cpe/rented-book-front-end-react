@@ -1,0 +1,62 @@
+.BookCard {
+  width: 200px;
+  height: 350px;
+  position: relative;
+  background-color: rgb(211, 208, 208);
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 50); */
+  border-radius: 5px;
+}
+.bookImgDiv {
+  width: 100%;
+  padding: 10px;
+  height: 80%;
+  border: #b8b5b5 0.5px solid;
+}
+.BookImg {
+  /* margin-top: 5px; */
+  width: 100%;
+  object-fit: contain;
+}
+
+.BookDetails {
+  margin-top: 5px;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-items: center;
+  margin-left: 10px;
+}
+.BookName {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.price {
+  font-weight: 200;
+  color: rgb(141, 141, 138);
+}
+
+.BookCard:hover {
+  /* background-color: #1c2934; */
+  border: #7e7d7d 1px solid;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  .BookCard {
+    width: 115px;
+    height: 205px;
+  }
+  .BookName {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 13px;
+  }
+
+}
