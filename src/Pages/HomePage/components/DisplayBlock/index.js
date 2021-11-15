@@ -2,7 +2,6 @@ import React, { useState ,useEffect } from "react";
 import "./style.css";
 import BookComponent from "../BookComponent";
 import { Scrollbar } from "react-scrollbars-custom";
-import useSWR from 'swr'
 import axios from "axios";
 
 function DisplayBlock() {

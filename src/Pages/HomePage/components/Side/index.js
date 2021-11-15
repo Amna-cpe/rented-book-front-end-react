@@ -1,12 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef } from "react";
 import "./style.css";
 import logo from "./LOGO.png";
 
-import { useLocation, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 function Index() {
-  const location = useLocation();
-
   const addRef = useRef();
   const removeRef = useRef();
   const topRef = useRef();
@@ -37,7 +35,7 @@ function Index() {
     <div className="side">
       {/* logo */}
       <div className="logo-holder">
-        <img src={logo} className="logo" />
+        <img src={logo} className="logo" alt="img" />
         <h3>Bookq8</h3>
         <h1 onClick={loadTopNav} ref={removeRef}>
           |||

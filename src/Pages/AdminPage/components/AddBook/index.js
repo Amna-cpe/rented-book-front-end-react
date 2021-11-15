@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./style.css";
-import NotifyModal from "../NotifyModal"
+import NotifyModal from "../NotifyModal";
 
 function AddBook() {
   const [name, setName] = useState("");
   const [image, setImg] = useState(null);
   const [price, setPrice] = useState(null);
   const [Id, setId] = useState(null);
-  const [success, setSuccess] = useState(false)
-  const [msg, setMsg] = useState("")
+  const [success, setSuccess] = useState(false);
+  const [msg, setMsg] = useState("");
   const [sent, setSent] = useState(false);
   const [some, setSome] = useState(false);
 
@@ -40,8 +40,6 @@ function AddBook() {
       .catch((error) => {
         console.log("*****  " + error);
         setMsg("Simething went wrong");
-
-        
       });
 
     setName("");
@@ -89,16 +87,13 @@ function AddBook() {
           Add
         </button>
 
-     
-
-        <NotifyModal 
+        <NotifyModal
           message={msg}
           sent={sent}
           some={some}
           disapear={disapear}
           success={success}
         />
-
       </div>
     </div>
   );

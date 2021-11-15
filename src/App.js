@@ -1,12 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
 import AdminPage from "./Pages/AdminPage/index";
 import HomePage from "./Pages/HomePage/index";
 
-
 function App() {
-
   return (
   
       <Router>
@@ -25,7 +22,7 @@ function App() {
           />
         </Routes>
       </Router>
-  
+   
   );
 }
 

@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-import img from "../../../AdminPage/components/Side/LOGO.png";
+
 export default function BookComponent() {
   return (
     <div className="BookCard">
       <div className="bookImgDiv">
-        <img className="BookImg" src={"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602190253l/52578297.jpg"} />
+        <img alt='img' className="BookImg" src={"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602190253l/52578297.jpg"} />
       </div>
 
       <div className="BookDetails">
