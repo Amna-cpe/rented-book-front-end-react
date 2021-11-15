@@ -16,7 +16,7 @@ function Index() {
 
   const logout = () => {
     window.localStorage.setItem("token", "");
-    navigate('/admin', { replace: true })
+    navigate('/', { replace: true })
     AuthDispatch("LOG_OUT");   
   };
 
@@ -32,6 +32,7 @@ function Index() {
   }, [location]);
 
   return (
+    authenticated &&
     <div className="side-admin">
       {/* logo */}
       <img src={logo} className="logo" alt="img" />

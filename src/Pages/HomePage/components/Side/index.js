@@ -1,24 +1,12 @@
 import React, { useRef } from "react";
 import "./style.css";
 import logo from "./LOGO.png";
-
-import {  Link } from "react-router-dom";
+import WHATSAPP_LOGO from "./whatsapp.png";
 
 function Index() {
-  const addRef = useRef();
   const removeRef = useRef();
   const topRef = useRef();
 
-  // useEffect(() => {
-  //   console.log("change?");
-  //   if (location.pathname === "/admin/add-book") {
-  //     addRef.current.id += "active";
-  //     removeRef.current.id = "";
-  //   } else if (location.pathname === "/admin/remove-book") {
-  //     removeRef.current.id = "active";
-  //     addRef.current.id = "";
-  //   }
-  // }, [location]);
 
   const loadTopNav = () => {
     let classes = topRef.current.className.split(" ");
@@ -43,47 +31,14 @@ function Index() {
       </div>
       {/* Add Text */}
       <div className="side-controllers" ref={topRef}>
-        <div className="side-text" ref={addRef}>
-          <Link to={"/2"}>
-            <p>فلسفه</p>
-          </Link>
+        <div className="side-text-home">
+          <p>Capture what you want and contact me via whatsapp</p>
         </div>
-        {/* Remove Book Text */}
-        <div className="side-text" ref={removeRef}>
-          <Link to={"/2"}>
-            {" "}
-            <p>تاريخ</p>
-          </Link>
-        </div>
-        <div className="side-text">
-          <Link to={"/2"}>
-            {" "}
-            <p>ادب روسي</p>
-          </Link>
-        </div>
-        <div className="side-text">
-          <Link to={"/2"}>
-            {" "}
-            <p>ادب انجليزي</p>
-          </Link>
-        </div>
-        <div className="side-text">
-          <Link to={"/2"}>
-            {" "}
-            <p>روايات انجليزيه</p>
-          </Link>
-        </div>
-        <div className="side-text">
-          <Link to={"/2"}>
-            {" "}
-            <p>روايات عربيه</p>
-          </Link>
-        </div>
-        <div className="side-text">
-          <Link to={"/2"}>
-            {" "}
-            <p>تاريخ</p>
-          </Link>
+
+        <div className="side-text-home">
+          <a href="https://wa.me/96566721117" target="_blank" rel="noreferrer">
+            <img src={WHATSAPP_LOGO} alt="whatsapp" className="img" />
+          </a>
         </div>
       </div>
       <footer className="footer">
